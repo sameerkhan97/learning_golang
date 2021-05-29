@@ -1,0 +1,4 @@
+*Go doesn't provide automatic support for getters and setters.
+
+*You can provide getters and setters yourself, and it's often appropriate to do so, 
+ but it's neither idiomatic nor necessary to put Get into the getter's name.
