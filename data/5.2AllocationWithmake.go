@@ -2,8 +2,11 @@
 	* the new does not initialize the memory, it only zeros it.But sometimes the zero value isn't good enough 
 	* The built-in function make(T, args) serves a purpose different from new(T).
 	* make creates slices, maps, and channels only, and it returns an initialized (not zeroed) value of type T (not *T).	*/
+
 package main
+
 import "fmt"
+
 func main(){
 	v:=make([]int,10,100)
 	// Allocates an array of 100 ints and then creates a slice structure with length 10 and 
@@ -18,7 +21,6 @@ func main(){
 
 	// Idiomatic:
 	v := make([]int, 100)
-
 }
 //NOTE : Remember that make applies only to maps, slices and channels and does not return a pointer.  
  
