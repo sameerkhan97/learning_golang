@@ -27,6 +27,6 @@ func isPrime(x int)(i int,flag bool){
 			x=i
 			flag=false;
 		}
-	}
+	} 
 	return 
 }
