@@ -42,8 +42,6 @@ This document gives tips for writing clear, idiomatic Go code. It augments the l
 * [Variables](https://github.com/sameerkhan97/learning_golang/blob/master/initialization/6.2variables.go)
 * [The init function](https://github.com/sameerkhan97/learning_golang/blob/master/initialization/6.3init.go)
 
-## Methods
-* [Pointers vs. Values](https://github.com/sameerkhan97/learning_golang/blob/master/methods/7.1pointervsValues.go)
 
 ## Interfaces and other types
 * [Interfaces](https://github.com/sameerkhan97/learning_golang/blob/master/interfaces/8.1Interfce.go)
