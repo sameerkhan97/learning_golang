@@ -19,11 +19,7 @@ Buffered Channel :
    * In Go you can also create a buffered channel. A buffered channel has some capacity to hold data hence for a buffered channel:
    * Send on a buffer channel only blocks if the buffer is full
 		Receive is only block is channel is empty
-
-
-
 */
-
 
 package main
 import (
