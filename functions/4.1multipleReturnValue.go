@@ -1,9 +1,10 @@
 //Functions and methods can return multiple values in GO
 
 package main
+
 import "fmt"
+
 func main(){
-	
 	msg1:="hello"
 	msg2:="Sam"	
 	sayMessage(&msg1,&msg2)
@@ -22,8 +23,6 @@ func main(){
 	}
 	fmt.Println(d)
 	f()
-	
-	
 }
 
 //returning a value
@@ -41,7 +40,6 @@ func devide(a,b float64) (float64,error){
 		return 0.0,fmt.Errorf("Cannot devide by zero ")
 	}
 	return a/b,nil
-
 }
 
 //pass by reference
