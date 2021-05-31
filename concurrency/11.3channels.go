@@ -6,7 +6,7 @@
    * To define the channel we can use the inbuilt function make. A channel is internally represented by a hchan struct who has many elements.
    * When using make, an instance of hchan struct is created and all the fields are initialized to their default values.
 Operations on Channel :
-   ~ Send Operation:
+   ~ Send Operation: 
    * The send operation is used to send data to the channel
     Eg ch <- val , ch is the channel variable , val is what being sent to the channel , Note that data type of val and data type of channel should match.
    * Any send on a channel is blocked until there is  another goroutine to receive it. 
