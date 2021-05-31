@@ -6,7 +6,7 @@
 		* If an assignment requires multiple values on the left side, but one of the values will not be used by the program, 
 		  a blank identifier on the left-hand-side of the assignment avoids the need to create a dummy variable and makes it 
 		  clear that the value is to be discarded.
-*/
+*/ 
 package main
 import "fmt"
 func main(){
