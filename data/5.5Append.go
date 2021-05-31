@@ -1,23 +1,10 @@
 /*	* The signature of append is different from our custom Append function above. Schematically, it's like this:
-	 		func append(slice []T, elements ...T) []T
-	* 
+	 		func append(slice []T, elements ...T) []T     */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 package main
+
 import "fmt"
+
 func main{
 	a:=[]int{1,2,3}
 	fmt.Println("a : ",a)
