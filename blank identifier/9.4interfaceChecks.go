@@ -7,15 +7,17 @@
 */
 
 package main
+
 import (
 	"fmt"
 	"json"
 )
-func main(){
-	
-	if _,ok:=val.(json.Marshaler); ok {
-		fmt.Printf("value %v of type %T implements json.Marshaler\n", val, val);
+
+func main() {
+
+	if _, ok := val.(json.Marshaler); ok {
+		fmt.Printf("value %v of type %T implements json.Marshaler\n", val, val)
 	}
-	//One place this situation arises is when it is necessary to guarantee within the package implementing 
+	//One place this situation arises is when it is necessary to guarantee within the package implementing
 	//the type that it actually satisfies the interface.
 }
