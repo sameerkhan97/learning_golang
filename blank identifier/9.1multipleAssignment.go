@@ -8,25 +8,29 @@
 		  clear that the value is to be discarded.
 */ 
 package main
+
 import "fmt"
-func main(){
+
+func main() {
 	// a simplew use of blank identifier
 	//here if we use any general variable then it will cause error
 	//because its declared but not used
-	_ , x:=isPrime(16)
+	_, x := isPrime(16)
 	switch x {
-		case true:fmt.Println("its a Prime Number")
-		case false:fmt.Println("its not a Prime Number")
+	case true:
+		fmt.Println("its a Prime Number")
+	case false:
+		fmt.Println("its not a Prime Number")
 	}
 }
 
-func isPrime(x int)(i int,flag bool){
-	x,flag=1,true
-	for i:=2;i<=x/2;i++{
-		if(x%i==0){
-			x=i
-			flag=false;
+func isPrime(x int) (i int, flag bool) {
+	x, flag = 1, true
+	for i := 2; i <= x/2; i++ {
+		if x%i == 0 {
+			x = i
+			flag = false
 		}
-	} 
-	return 
+	}
+	return
 }
