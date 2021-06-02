@@ -15,20 +15,19 @@
 	    sum += value
 	}															*/
 
-
 package main
 
 import "fmt"
 
-func main(){
+func main() {
 	// Simple For loop in GO
-	for i:=0;i<10;i++{
-		fmt.Println("Hello GO ",i)
+	for i := 0; i < 10; i++ {
+		fmt.Println("Hello GO ", i)
 	}
 
 	//If you're looping over an array, slice, string, or map, or reading from a channel, a range clause can manage the loop.
-	primes:= [6]int{2,3,5,7,11,13}		//this si an array ,it will be discussed later On
-	for i:=range primes{
+	primes := [6]int{2, 3, 5, 7, 11, 13} //this si an array ,it will be discussed later On
+	for i := range primes {
 		fmt.Println(primes[i])
 	}
 }
