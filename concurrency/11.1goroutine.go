@@ -7,23 +7,22 @@
 
 */ 
 
-
 package main
 
-import(
+import (
 	"fmt"
 	"time"
 )
 
-func main(){
-	go say("Hello")		//both say and go routine say run concurrently
+func main() {
+	go say("Hello") //both say and go routine say run concurrently
 	go say("There")
-	time.Sleep(time.Second)	//main function would wait here for a second before ending and goroutine will get some time to complete
+	time.Sleep(time.Second) //main function would wait here for a second before ending and goroutine will get some time to complete
 }
 
-func say(s string){
-	for i:=0;i<3;i++{
+func say(s string) {
+	for i := 0; i < 3; i++ {
 		fmt.Println(s)
-		time.Sleep(time.Millisecond);
+		time.Sleep(time.Millisecond)
 	}
 }
