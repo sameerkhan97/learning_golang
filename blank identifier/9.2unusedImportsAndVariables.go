@@ -13,18 +13,20 @@
 //This version of the program does compile.
 
 package main
+
 import (
 	"fmt"
 	"log"
 	"os"
 )
+
 //By convention, the global declarations to silence import errors should come right after the imports and be commented
-	
-var _=fmt.Printf		// For debugging; delete when done.
-func main(){
-	fd,err:=os.Open("multipleAssignment.go")
-	if err!=nil{
+
+var _ = fmt.Printf // For debugging; delete when done.
+func main() {
+	fd, err := os.Open("multipleAssignment.go")
+	if err != nil {
 		log.Fatal(err)
 	}
-	_=fd
+	_ = fd
 }
