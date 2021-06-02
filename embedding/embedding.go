@@ -6,28 +6,29 @@ package main
 
 import "fmt"
 
-type person struct{
-	name,add string;
-	phone int
+type person struct {
+	name, add string
+	phone     int
 }
-type employe struct{
-	person			//Embedding person inside employe
-	id,salary int
-	dept string
+type employe struct {
+	person     //Embedding person inside employe
+	id, salary int
+	dept       string
 }
-func (E *employe) setInfo(){
-	fmt.Scan(&E.name,&E.add,&E.phone,&E.salary,&E.dept,&E.id);
+
+func (E *employe) setInfo() {
+	fmt.Scan(&E.name, &E.add, &E.phone, &E.salary, &E.dept, &E.id)
 }
-func (E employe) getInfo(){
-	fmt.Println("Name   	: ",E.name)
-	fmt.Println("Id     	: ",E.id)
-	fmt.Println("Dept   	: ",E.dept)
-	fmt.Println("Salary 	: ",E.salary)
-	fmt.Println("Phone No. : ",E.phone)
-	fmt.Println("Adress    : ",E.add)
+func (E employe) getInfo() {
+	fmt.Println("Name   	: ", E.name)
+	fmt.Println("Id     	: ", E.id)
+	fmt.Println("Dept   	: ", E.dept)
+	fmt.Println("Salary 	: ", E.salary)
+	fmt.Println("Phone No. : ", E.phone)
+	fmt.Println("Adress    : ", E.add)
 }
-func main(){
-      	emp:=employee
+func main() {
+	emp := employee
 	emp.setInfo()
 	emp.getInfo()
 }
