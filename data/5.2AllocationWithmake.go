@@ -7,13 +7,13 @@ package main
 
 import "fmt"
 
-func main(){
-	v:=make([]int,10,100)
-	// Allocates an array of 100 ints and then creates a slice structure with length 10 and 
-	// a capacity of 100 pointing at the first 10 elements of the array. 
+func main() {
+	v := make([]int, 10, 100)
+	// Allocates an array of 100 ints and then creates a slice structure with length 10 and
+	// a capacity of 100 pointing at the first 10 elements of the array.
 
-	var p *[]int = new([]int)       // allocates slice structure; *p == nil; rarely useful
-	var v  []int = make([]int, 100) // the slice v now refers to a new array of 100 ints
+	var p *[]int = new([]int)      // allocates slice structure; *p == nil; rarely useful
+	var v []int = make([]int, 100) // the slice v now refers to a new array of 100 ints
 
 	// Unnecessarily complex:
 	var p *[]int = new([]int)
@@ -22,5 +22,7 @@ func main(){
 	// Idiomatic:
 	v := make([]int, 100)
 }
-//NOTE : Remember that make applies only to maps, slices and channels and does not return a pointer.  
+
+//NOTE : Remember that make applies only to maps, slices and channels and does not return a pointer.
+ 
  
