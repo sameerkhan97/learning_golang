@@ -10,25 +10,26 @@ package main
 
 import "fmt"
 
-func main(){
-	a:=[]string{"one","two"}
-	checkAndPrint(a,2)
+func main() {
+	a := []string{"one", "two"}
+	checkAndPrint(a, 2)
 }
+
 //checkAndPrint which checks and prints slice element at an index passed in the argument
-func checkAndPrint(a []string,index int){	
+func checkAndPrint(a []string, index int) {
 	//defer function named handleOutIfBounds as well at the start of the function checkAndPrint.
 	//This function  contains  the  call to recover function
-	defer handleOutOfBound();
-	
-	if index>len(a)-1{
+	defer handleOutOfBound()
+
+	if index > len(a)-1 {
 		//if the index passed is greater than the length of the array then the program panics.
 		panic("Out of Bound aaccess for slice")
 	}
-	fmt.Println(a[index]);
+	fmt.Println(a[index])
 }
-func handleOutOfBound(){
-	if r:=recover();r!=nil{
-		//The recover function will catch the panic and we can also print the message from the panic. 
-		fmt.Println("Recovering from Panic : ",r)
+func handleOutOfBound() {
+	if r := recover(); r != nil {
+		//The recover function will catch the panic and we can also print the message from the panic.
+		fmt.Println("Recovering from Panic : ", r)
 	}
 }
