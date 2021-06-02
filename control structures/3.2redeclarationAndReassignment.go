@@ -7,9 +7,10 @@ package main
 
 import "fmt"
 
-func main(){
-	
+func main() {
+
 	//the := works as a short declaration form
-	x,y:=110,120
-	fmt.Println(x,y)
+	x, y := 110, 120
+	fmt.Println(x, y)
 }
+
