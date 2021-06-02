@@ -15,11 +15,12 @@
 */
 
 package main
+
 import (
-	_"net/http/pprof"
 	"fmt"
+	_ "net/http/pprof"
 )
 
-func main(){
+func main() {
 	fmt.Println("Hello Go world")
-}
+}			
