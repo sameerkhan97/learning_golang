@@ -9,17 +9,19 @@
 */
 
 package main
+
 import "fmt"
-func main(){
-	x:=Devision(9,0);
-	fmt.Println(x);
+
+func main() {
+	x := Devision(9, 0)
+	fmt.Println(x)
 }
 
 // A toy implementation of cube root using Newton's method.
-func Devision(x ,y float64) float64 {
-    if y==0{
+func Devision(x, y float64) float64 {
+	if y == 0 {
 		panic("Cannot devide by zero ")
 	}
-	d:=x/y;
-	return d;
+	d := x / y
+	return d
 }
