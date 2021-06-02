@@ -22,22 +22,24 @@ Buffered Channel :
 */
 
 package main
+
 import (
 	"fmt"
 	"time"
 )
-func main(){
-	a:=make(chan int)	//defining channel using function make.
+
+func main() {
+	a := make(chan int) //defining channel using function make.
 	fmt.Println("Sending values to channels")
 	go send(a)
 	fmt.Println("Recieving values to channels")
 	go recieve(a)
-	time.Sleep(time.Second*2);
+	time.Sleep(time.Second * 2)
 }
-func send(ch chan int){
-	ch<-1
+func send(ch chan int) {
+	ch <- 1
 }
-func recieve(ch chan int){
-	val:=<-ch
-	fmt.Println("Value recieved = ",val," in recieve function")
+func recieve(ch chan int) {
+	val := <-ch
+	fmt.Println("Value recieved = ", val, " in recieve function")
 }
