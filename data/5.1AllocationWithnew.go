@@ -9,14 +9,16 @@
 */
 
 package main
+
 import "fmt"
 
-type demo struct{
-	x int;
-	t bool;
-	f float64;
+type demo struct {
+	x int
+	t bool
+	f float64
 }
-func main(){
-	obj:=new(demo)
-	fmt.Println(obj.x,obj.t,obj.f)	//see values initialized by new
+
+func main() {
+	obj := new(demo)
+	fmt.Println(obj.x, obj.t, obj.f) //see values initialized by new
 }
