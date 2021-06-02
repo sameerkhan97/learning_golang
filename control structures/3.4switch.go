@@ -5,28 +5,27 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	//switch statement
-	//Go only runs the selected case, not all the cases that follow. In effect, 
+	//Go only runs the selected case, not all the cases that follow. In effect,
 	//the break statement is provided automatically in Go after every case.
-	
+
 	fmt.Println("When's Saturday?")
 	today := time.Now().Weekday()
 	switch time.Saturday {
-		case today + 0:
-			fmt.Println("Today.")
-		case today + 1:
-			fmt.Println("Tomorrow.")
-		case today + 2:
-			fmt.Println("In two days.")
-		default:
-			fmt.Println("Too far away.")
+	case today + 0:
+		fmt.Println("Today.")
+	case today + 1:
+		fmt.Println("Tomorrow.")
+	case today + 2:
+		fmt.Println("In two days.")
+	default:
+		fmt.Println("Too far away.")
 	}
 	//cases can be presented in comma-separated lists.
 	switch c {
-		case ' ', '?', '&', '=', '#', '+', '%':
-			return true
-		}
+	case ' ', '?', '&', '=', '#', '+', '%':
+		return true
 	}
 }
