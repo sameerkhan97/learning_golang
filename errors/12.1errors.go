@@ -11,28 +11,28 @@
 package main
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
 )
 
-func main(){
+func main() {
 	//sumOf() calculate sum of elements between given range
-	//it will give error when start of range is greater than end of range  
-	total,err:=sumOf(10,2);
+	//it will give error when start of range is greater than end of range
+	total, err := sumOf(10, 2)
 
-	if err!=nil{
-		fmt.Println("There is an Error ",err)
-	}else{
-		fmt.Println("Sum = ",total)
+	if err != nil {
+		fmt.Println("There is an Error ", err)
+	} else {
+		fmt.Println("Sum = ", total)
 	}
 }
-func sumOf(start,end int) (int , error){
-	if start>end{
-		return 0,errors.New("Start is greater than end")
+func sumOf(start, end int) (int, error) {
+	if start > end {
+		return 0, errors.New("Start is greater than end")
 	}
-	total:=0;
-	for i:=start;i<=end;i++{
-		total+=i;
+	total := 0
+	for i := start; i <= end; i++ {
+		total += i
 	}
-	return total,nil
+	return total, nil
 }
